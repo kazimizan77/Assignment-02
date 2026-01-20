@@ -542,7 +542,7 @@ body {
 .footer-section {
     background: url("./assets/footer-bg.png") center/ cover no-repeat;
     background-position: center;
-    */ background-size: cover;
+    background-size: cover;
     padding: 80px 0;
     /* text-align: center; */
     /* min-height: 260px; */
@@ -809,6 +809,115 @@ body {
     }
 }
 
+/* @media screen and (min-width: 992px) {
+    .header-container {
+        display: grid;
+        grid-template-columns: auto 1fr auto;
+        align-items: center;
+    }
+
+    .nav-logo {
+        justify-self: start;
+    }
+
+    .nav-link {
+        justify-self: center;
+    }
+
+    .btn-nav {
+        justify-self: end;
+    }
+
+    .mobile-menu {
+        display: none;
+    }
+
+    .hero {
+        min-height: 760px;
+    }
+
+    .mic {
+        width: 350px;
+        height: 350px;
+    }
+
+    .hero-title h1 {
+        font-size: 3.75rem;
+    }
+
+    .hero-title p {
+        max-width: 600px;
+        margin: 0 auto;
+    }
+
+    .hero-button {
+        justify-content: center;
+    }
+
+    .about-stats {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .stats h3 {
+        font-size: 3.5rem;
+    }
+
+    .why-card-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .why-card.side {
+        grid-row: span 2;
+    }
+
+    .why-card.mobile,
+    .why-card.global,
+    .why-card.wide {
+        grid-column: span 2;
+    }
+
+    .card-container {
+        display: flex;
+        gap: 30px;
+        justify-content: center;
+    }
+
+    .episode-card {
+        flex: 0 0 360px;
+    }
+
+    .host-card {
+        flex-direction: row;
+        text-align: left;
+    }
+
+    .host-info p {
+        max-width: 900px;
+    }
+
+    .footer-links {
+        display: flex;
+        justify-content: center;
+        gap: 40px;
+    }
+
+} */
+
+@media screen and (min-width: 992px) {
+
+    .about-container {
+        padding: 0;
+    }
+
+    .footer-container {
+        padding: 80px 200px;
+    }
+
+}
+
+
+
 @media screen and (min-width: 576px) and (max-width: 992px) {
 
     .nav-link,
@@ -818,6 +927,88 @@ body {
 
     .mobile-menu {
         display: inline;
+    }
+
+    .hero {
+        min-height: 650px;
+    }
+
+    .mic {
+        width: 260px;
+        height: 260px;
+    }
+
+    .mic-img {
+        width: 90px;
+    }
+
+    .hero-title h1 {
+        font-size: 2.8rem;
+    }
+
+    .about {
+        padding: 60px 40px 80px;
+    }
+
+    .about-container {
+        padding: 40px 0 80px;
+    }
+
+    .about-stats {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 40px;
+    }
+
+    .why-container {
+        padding: 0 40px;
+    }
+
+    .why-card-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .why-card.mobile,
+    .why-card.global,
+    .why-card.wide,
+    .why-card.rich {
+        grid-column: span 1;
+    }
+
+    .featured-container,
+    .card-container {
+        padding: 0 40px;
+    }
+
+    .card-container {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .episode-card {
+        flex: 0 0 300px;
+    }
+
+    .host-container {
+        padding: 0 40px;
+    }
+
+    .host-card {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .host-social {
+        justify-content: center;
+    }
+
+    .footer-container {
+        padding: 0 50px;
+    }
+
+    .footer-links {
+        flex-wrap: wrap;
+        gap: 24px;
     }
 
 
