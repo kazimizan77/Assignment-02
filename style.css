@@ -10,6 +10,20 @@ body {
     color: #FFF;
 }
 
+button {
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+button:hover {
+    transform: translateY(-2px) scale(1.03);
+    box-shadow: 0 8px 30px rgba(251, 9, 180, 0.4);
+    filter: brightness(1.1);
+}
+
 .header-section {
     background-color: linear-gradient(180deg, #1a0b2e, #160824);
     border-bottom: 1px solid rgba(65, 37, 103, 1);
@@ -46,7 +60,6 @@ body {
 
 .nav-link {
     display: flex;
-    /* justify-content: flex-start; */
     gap: 32px;
 
 }
@@ -59,9 +72,7 @@ body {
     font-weight: 500;
 }
 
-.nav-link a:hover {
-    color: #fb09b4;
-}
+
 
 .btn-nav {
     background: linear-gradient(47.64deg, #f7e93f 16.5%, #fb09b4 49.8%, #9100f8 81.6%);
@@ -602,15 +613,18 @@ body {
 .footer-note {
     font-size: 1rem;
     color: rgba(250, 250, 250, 1);
-    opacity: 0.7;
+    opacity: 0.5;
+}
+
+.footer-links a:hover,
+.host-social a:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 30px rgba(251, 9, 180, 0.4);
 }
 
 
 @media screen and (max-width: 576px) {
 
-    /* body {
-        overflow-y: hidden;
-    } */
 
     .nav-link,
     .btn-nav {
@@ -628,7 +642,7 @@ body {
 
     .hero {
         min-height: 100%;
-        /* background-position: center 30%; */
+
     }
 
     .hero-overlay {
@@ -706,9 +720,6 @@ body {
         letter-spacing: 1px;
     }
 
-    /* .why-section {
-        padding: 60px 0;
-    } */
 
     .why-container {
         padding: 0 20px;
@@ -809,100 +820,7 @@ body {
     }
 }
 
-/* @media screen and (min-width: 992px) {
-    .header-container {
-        display: grid;
-        grid-template-columns: auto 1fr auto;
-        align-items: center;
-    }
 
-    .nav-logo {
-        justify-self: start;
-    }
-
-    .nav-link {
-        justify-self: center;
-    }
-
-    .btn-nav {
-        justify-self: end;
-    }
-
-    .mobile-menu {
-        display: none;
-    }
-
-    .hero {
-        min-height: 760px;
-    }
-
-    .mic {
-        width: 350px;
-        height: 350px;
-    }
-
-    .hero-title h1 {
-        font-size: 3.75rem;
-    }
-
-    .hero-title p {
-        max-width: 600px;
-        margin: 0 auto;
-    }
-
-    .hero-button {
-        justify-content: center;
-    }
-
-    .about-stats {
-        display: flex;
-        justify-content: space-between;
-    }
-
-    .stats h3 {
-        font-size: 3.5rem;
-    }
-
-    .why-card-container {
-        grid-template-columns: repeat(3, 1fr);
-    }
-
-    .why-card.side {
-        grid-row: span 2;
-    }
-
-    .why-card.mobile,
-    .why-card.global,
-    .why-card.wide {
-        grid-column: span 2;
-    }
-
-    .card-container {
-        display: flex;
-        gap: 30px;
-        justify-content: center;
-    }
-
-    .episode-card {
-        flex: 0 0 360px;
-    }
-
-    .host-card {
-        flex-direction: row;
-        text-align: left;
-    }
-
-    .host-info p {
-        max-width: 900px;
-    }
-
-    .footer-links {
-        display: flex;
-        justify-content: center;
-        gap: 40px;
-    }
-
-} */
 
 @media screen and (min-width: 992px) {
 
@@ -931,6 +849,11 @@ body {
 
     .hero {
         min-height: 650px;
+    }
+
+    .hero-button {
+        justify-content: center;
+        gap: 16px;
     }
 
     .mic {
