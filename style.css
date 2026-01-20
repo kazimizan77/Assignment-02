@@ -28,7 +28,15 @@ body {
     display: flex;
     align-items: center;
     gap: 10px;
-    border: 1px solid rgba(0, 0, 0, 1);
+    font-size: 1.5rem;
+    /* border: 1px solid rgba(0, 0, 0, 1); */
+}
+
+
+.nav-logo span {
+    background: linear-gradient(#9100F8, #FB09B4, #F7E93F);
+    -webkit-background-clip: text;
+    color: transparent;
 }
 
 .nav-logo img {
